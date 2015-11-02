@@ -42,7 +42,7 @@ define([
 
   var dropdownCheck = renderer.create('<div class="dropdown-menu note-check">', function ($node, options) {
     var markup = $.isArray(options.items) ? options.items.map(function (item) {
-      return '<li><a href="#" data-value="' + item + '"><i class="fa fa-check" /> ' + item + '</a></li>';
+      return '<li><a href="#" data-value="' + item + '"> ' + icon("note-icon-menu-check") + ' ' + item + '</a></li>';
     }).join('') : options.items;
     $node.html(markup);
   });
@@ -101,6 +101,11 @@ define([
     '</div>'
   ].join(''));
 
+  var icon = function (iconClassName, tag) {
+    tag = tag || 'i';
+    return '<' + tag + ' class="' + iconClassName + '" />';
+  };
+
   var ui = {
     editor: editor,
     toolbar: toolbar,
@@ -117,6 +122,7 @@ define([
     palette: palette,
     dialog: dialog,
     popover: popover,
+    icon: icon,
 
     toggleBtn: function ($btn, isEnable) {
       $btn.toggleClass('disabled', !isEnable);

@@ -39,7 +39,7 @@ define([
         return ui.buttonGroup([
           ui.button({
             className: 'dropdown-toggle',
-            contents: '<i class="fa fa-magic"/> <span class="caret"/>',
+            contents: ui.icon(options.icons.magic) + ' ' + ui.icon(options.icons.caret, 'span'),
             tooltip: lang.style.style,
             data: {
               toggle: 'dropdown'
@@ -56,7 +56,7 @@ define([
       context.addButton('bold', function () {
         return ui.button({
           className: 'note-btn-bold',
-          contents: '<i class="fa fa-bold"/>',
+          contents: ui.icon(options.icons.bold),
           tooltip: lang.font.bold + representShortcut('bold'),
           click: context.createInvokeHandler('editor.bold')
         }).render();
@@ -65,7 +65,7 @@ define([
       context.addButton('italic', function () {
         return ui.button({
           className: 'note-btn-italic',
-          contents: '<i class="fa fa-italic"/>',
+          contents: ui.icon(options.icons.italic),
           tooltip: lang.font.italic + representShortcut('italic'),
           click: context.createInvokeHandler('editor.italic')
         }).render();
@@ -74,7 +74,7 @@ define([
       context.addButton('underline', function () {
         return ui.button({
           className: 'note-btn-underline',
-          contents: '<i class="fa fa-underline"/>',
+          contents: ui.icon(options.icons.underline),
           tooltip: lang.font.underline + representShortcut('underline'),
           click: context.createInvokeHandler('editor.underline')
         }).render();
@@ -82,7 +82,7 @@ define([
 
       context.addButton('clear', function () {
         return ui.button({
-          contents: '<i class="fa fa-eraser"/>',
+          contents: ui.icon(options.icons.eraser),
           tooltip: lang.font.clear + representShortcut('removeFormat'),
           click: context.createInvokeHandler('editor.removeFormat')
         }).render();
@@ -92,7 +92,7 @@ define([
         return ui.buttonGroup([
           ui.button({
             className: 'dropdown-toggle',
-            contents: '<span class="note-current-fontname"/> <span class="caret"/>',
+            contents: '<span class="note-current-fontname"/> ' + ui.icon(options.icons.caret, 'span'),
             tooltip: lang.font.name,
             data: {
               toggle: 'dropdown'
@@ -113,7 +113,7 @@ define([
         return ui.buttonGroup([
           ui.button({
             className: 'dropdown-toggle',
-            contents: '<span class="note-current-fontsize"/> <span class="caret"/>',
+            contents: '<span class="note-current-fontsize"/>' + ui.icon(options.icons.caret, 'span'),
             tooltip: lang.font.size,
             data: {
               toggle: 'dropdown'
@@ -133,7 +133,7 @@ define([
           children: [
             ui.button({
               className : 'note-current-color-button',
-              contents: '<i class="fa fa-font note-recent-color"/>',
+              contents: ui.icon(options.icons.font + ' note-recent-color'),
               tooltip: lang.color.recent,
               click: context.createInvokeHandler('editor.color'),
               callback: function ($button) {
@@ -149,7 +149,7 @@ define([
             }),
             ui.button({
               className: 'dropdown-toggle',
-              contents: '<span class="caret"/>',
+              contents: ui.icon(options.icons.caret, 'span'),
               tooltip: lang.color.more,
               data: {
                 toggle: 'dropdown'
@@ -204,7 +204,7 @@ define([
 
       context.addButton('ol',  function () {
         return ui.button({
-          contents: '<i class="fa fa-list-ul"/>',
+          contents: ui.icon(options.icons.unorderedlist),
           tooltip: lang.lists.unordered + representShortcut('insertUnorderedList'),
           click: context.createInvokeHandler('editor.insertUnorderedList')
         }).render();
@@ -212,7 +212,7 @@ define([
 
       context.addButton('ul', function () {
         return ui.button({
-          contents: '<i class="fa fa-list-ol"/>',
+          contents: ui.icon(options.icons.orderedlist),
           tooltip: lang.lists.ordered + representShortcut('insertOrderedList'),
           click:  context.createInvokeHandler('editor.insertOrderedList')
         }).render();
@@ -222,7 +222,7 @@ define([
         return ui.buttonGroup([
           ui.button({
             className: 'dropdown-toggle',
-            contents: '<i class="fa fa-align-left"/> <span class="caret"/>',
+            contents: ui.icon(options.icons.align) + ' ' + ui.icon(options.icons.caret, 'span'),
             tooltip: lang.paragraph.paragraph,
             data: {
               toggle: 'dropdown'
@@ -233,22 +233,22 @@ define([
               className: 'note-align',
               children: [
                 ui.button({
-                  contents: '<i class="fa fa-align-left"/>',
+                  contents: ui.icon(options.icons['align-left']),
                   tooltip: lang.paragraph.left + representShortcut('justifyLeft'),
                   click: context.createInvokeHandler('editor.justifyLeft')
                 }),
                 ui.button({
-                  contents: '<i class="fa fa-align-center"/>',
+                  contents: ui.icon(options.icons['align-center']),
                   tooltip: lang.paragraph.center + representShortcut('justifyCenter'),
                   click: context.createInvokeHandler('editor.justifyCenter')
                 }),
                 ui.button({
-                  contents: '<i class="fa fa-align-right"/>',
+                  contents: ui.icon(options.icons['align-right']),
                   tooltip: lang.paragraph.right + representShortcut('justifyRight'),
                   click: context.createInvokeHandler('editor.justifyRight')
                 }),
                 ui.button({
-                  contents: '<i class="fa fa-align-justify"/>',
+                  contents: ui.icon(options.icons['align-justify']),
                   tooltip: lang.paragraph.justify + representShortcut('justifyFull'),
                   click: context.createInvokeHandler('editor.justifyFull')
                 })
@@ -258,12 +258,12 @@ define([
               className: 'note-list',
               children: [
                 ui.button({
-                  contents: '<i class="fa fa-outdent"/>',
+                  contents: ui.icon(options.icons['align-outdent']),
                   tooltip: lang.paragraph.outdent + representShortcut('outdent'),
                   click: context.createInvokeHandler('editor.outdent')
                 }),
                 ui.button({
-                  contents: '<i class="fa fa-indent"/>',
+                  contents: ui.icon(options.icons['align-indent']),
                   tooltip: lang.paragraph.indent + representShortcut('indent'),
                   click: context.createInvokeHandler('editor.indent')
                 })
@@ -277,7 +277,7 @@ define([
         return ui.buttonGroup([
           ui.button({
             className: 'dropdown-toggle',
-            contents: '<i class="fa fa-text-height"/> <span class="caret"/>',
+            contents: ui.icon(options.icons['text-height']) + ' ' + ui.icon(options.icons.caret, 'span'),
             tooltip: lang.font.height,
             data: {
               toggle: 'dropdown'
@@ -295,7 +295,7 @@ define([
         return ui.buttonGroup([
           ui.button({
             className: 'dropdown-toggle',
-            contents: '<i class="fa fa-table"/> <span class="caret"/>',
+            contents: ui.icon(options.icons.table) + ' ' + ui.icon(options.icons.caret, 'span'),
             tooltip: lang.table.table,
             data: {
               toggle: 'dropdown'
@@ -326,7 +326,7 @@ define([
 
       context.addButton('link', function () {
         return ui.button({
-          contents: '<i class="fa fa-link"/>',
+          contents: ui.icon(options.icons.link),
           tooltip: lang.link.link,
           click: context.createInvokeHandler('linkDialog.show')
         }).render();
@@ -334,7 +334,7 @@ define([
 
       context.addButton('picture', function () {
         return ui.button({
-          contents: '<i class="fa fa-picture-o"/>',
+          contents: ui.icon(options.icons.picture),
           tooltip: lang.image.image,
           click: context.createInvokeHandler('imageDialog.show')
         }).render();
@@ -342,7 +342,7 @@ define([
 
       context.addButton('video', function () {
         return ui.button({
-          contents: '<i class="fa fa-youtube-play"/>',
+          contents: ui.icon(options.icons.video),
           tooltip: lang.video.video,
           click: context.createInvokeHandler('videoDialog.show')
         }).render();
@@ -350,7 +350,7 @@ define([
 
       context.addButton('hr', function () {
         return ui.button({
-          contents: '<i class="fa fa-minus"/>',
+          contents: ui.icon(options.icons.minus),
           tooltip: lang.hr.insert + representShortcut('insertHorizontalRule'),
           click: context.createInvokeHandler('editor.insertHorizontalRule')
         }).render();
@@ -359,7 +359,7 @@ define([
       context.addButton('fullscreen', function () {
         return ui.button({
           className: 'btn-fullscreen',
-          contents: '<i class="fa fa-arrows-alt"/>',
+          contents: ui.icon(options.icons['arrows-alt']),
           tooltip: lang.options.fullscreen,
           click: context.createInvokeHandler('fullscreen.toggle')
         }).render();
@@ -368,7 +368,7 @@ define([
       context.addButton('codeview', function () {
         return ui.button({
           className: 'btn-codeview',
-          contents: '<i class="fa fa-code"/>',
+          contents: ui.icon(options.icons.code),
           tooltip: lang.options.codeview,
           click: context.createInvokeHandler('codeview.toggle')
         }).render();
@@ -376,7 +376,7 @@ define([
 
       context.addButton('help', function () {
         return ui.button({
-          contents: '<i class="fa fa-question"/>',
+          contents: ui.icon(options.icons.question),
           tooltip: lang.options.help,
           click: context.createInvokeHandler('helpDialog.show')
         }).render();
@@ -417,7 +417,7 @@ define([
       // Float Buttons
       context.addButton('floatLeft', function () {
         return ui.button({
-          contents: '<i class="fa fa-align-left"/>',
+          contents: ui.icon(options.icons['align-left']),
           tooltip: lang.image.floatLeft,
           click: context.createInvokeHandler('editor.floatMe', 'left')
         }).render();
@@ -425,7 +425,7 @@ define([
 
       context.addButton('floatRight', function () {
         return ui.button({
-          contents: '<i class="fa fa-align-right"/>',
+          contents: ui.icon(options.icons['align-right']),
           tooltip: lang.image.floatRight,
           click: context.createInvokeHandler('editor.floatMe', 'right')
         }).render();
@@ -433,7 +433,7 @@ define([
 
       context.addButton('floatNone', function () {
         return ui.button({
-          contents: '<i class="fa fa-align-justify"/>',
+          contents: ui.icon(options.icons['align-justify']),
           tooltip: lang.image.floatNone,
           click: context.createInvokeHandler('editor.floatMe', 'none')
         }).render();
@@ -442,7 +442,7 @@ define([
       // Remove Buttons
       context.addButton('removeMedia', function () {
         return ui.button({
-          contents: '<i class="fa fa-trash-o"/>',
+          contents: ui.icon(options.icons.trash),
           tooltip: lang.image.remove,
           click: context.createInvokeHandler('editor.removeMedia')
         }).render();
@@ -452,7 +452,7 @@ define([
     this.addLinkPopoverButtons = function () {
       context.addButton('linkDialogShow', function () {
         return ui.button({
-          contents: '<i class="fa fa-link"/>',
+          contents: ui.icon(options.icons.link),
           tooltip: lang.link.edit,
           click: context.createInvokeHandler('linkDialog.show')
         }).render();
@@ -460,7 +460,7 @@ define([
 
       context.addButton('unlink', function () {
         return ui.button({
-          contents: '<i class="fa fa-unlink"/>',
+          contents: ui.icon(options.icons.unlink),
           tooltip: lang.link.unlink,
           click: context.createInvokeHandler('editor.unlink')
         }).render();

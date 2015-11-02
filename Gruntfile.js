@@ -191,6 +191,24 @@ module.exports = function (grunt) {
       travis: {
         src: 'test/coverage/**/lcov.info'
       }
+    },
+    webfont: {
+      icons: {
+        src: 'src/icons/*.svg',
+        dest: 'dist/fonts',
+        options: {
+          types: 'eot,woff2,woff,ttf,svg',
+          syntax : 'bootstrap',
+          font: 'summernote',
+          normalize: true,
+          fontHeight: 1024,
+          descent : 0,
+          templateOptions: {
+            classPrefix: 'note-icon-',
+            mixinPrefix: 'note-icon-'
+          }
+        }
+      }
     }
   });
 
