@@ -42,7 +42,7 @@ define([
 
   var dropdownCheck = renderer.create('<div class="dropdown-menu note-check">', function ($node, options) {
     var markup = $.isArray(options.items) ? options.items.map(function (item) {
-      return '<li><a href="#" data-value="' + item + '"> ' + icon("note-icon-menu-check") + ' ' + item + '</a></li>';
+      return '<li><a href="#" data-value="' + item + '"> ' + icon('note-icon-menu-check') + ' ' + item + '</a></li>';
     }).join('') : options.items;
     $node.html(markup);
   });
