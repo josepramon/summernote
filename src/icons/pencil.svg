@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<path d="M118.4,277.6L76,436l160-40l200-201.6L318.4,76L118.4,277.6z M376,194.4L214.4,357.6L165.6,368L144,346.4l11.2-47.2
-	L316.8,136L376,194.4z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="pencil" sketch:type="MSLayerGroup" transform="translate(30.000000, 30.000000)">
+                <path d="M113.537778,539.84 L0,964 L428.444444,856.888889 L964,317.048889 L649.093333,0 L113.537778,539.84 L113.537778,539.84 Z M803.333333,317.048889 L370.604444,754.062222 L239.928889,781.911111 L182.088889,724.071111 L212.08,597.68 L644.808889,160.666667 L803.333333,317.048889 L803.333333,317.048889 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
 </svg>

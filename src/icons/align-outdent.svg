@@ -1,11 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<g>
-	<path d="M76.9,116v56h360v-56H76.9z M244.9,284h192v-56h-192V284z M244.9,396h192v-56h-192V396z M173.7,228
-		c-8,5.6-86.4,69.6-94.4,75.2c-5.6,2.4-5.6,11.2,0,16.8c8,5.6,88.8,69.6,92,75.2c5.6,2.4,13.6,0,13.6-8v-148
-		C187.3,230.4,178.5,224.8,173.7,228z"/>
-</g>
-<rect x="255.2" y="255.6" width="1.6" height="0.8"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="align-outdent" sketch:type="MSLayerGroup" transform="translate(30.000000, 138.000000)">
+                <path d="M5.05966851,0 L5.05966851,149.127072 L963.733702,149.127072 L963.733702,0 L5.05966851,0 L5.05966851,0 Z M452.440884,447.381215 L963.733702,447.381215 L963.733702,298.254144 L452.440884,298.254144 L452.440884,447.381215 L452.440884,447.381215 Z M452.440884,745.635359 L963.733702,745.635359 L963.733702,596.508287 L452.440884,596.508287 L452.440884,745.635359 L452.440884,745.635359 Z M262.836464,298.254144 C241.532597,313.166851 32.7546961,483.59779 11.4508287,498.510497 C-3.46187845,504.901657 -3.46187845,528.335912 11.4508287,543.248619 C32.7546961,558.161326 247.923757,728.592265 256.445304,743.504972 C271.358011,749.896133 292.661878,743.504972 292.661878,722.201105 L292.661878,328.079558 C299.053039,304.645304 275.618785,289.732597 262.836464,298.254144 L262.836464,298.254144 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="479.869613" y="371.752486" width="4.26077348" height="2.13038674"></rect>
+            </g>
+        </g>
+    </g>
 </svg>

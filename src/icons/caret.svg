@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<path d="M176.7,193.5c8.8,0,152,0,157.6,0c8.8,0,11.2,8.8,8.8,14.4c-3.2,5.6-72,97.6-77.6,106.4c-3.2,5.6-14.4,5.6-17.6,0
-	c-5.6-8.8-74.4-97.6-77.6-106.4C165.5,201.5,168.7,193.5,176.7,193.5z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4 (15588) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-1" sketch:type="MSArtboardGroup" fill="#000000">
+            <g id="caret" sketch:type="MSLayerGroup" transform="translate(271.000000, 339.000000)">
+                <path d="M23.8261364,1.36931818 L455.435227,1.36931818 C479.535227,1.36931818 486.107955,25.4693182 479.535227,40.8056818 C470.771591,56.1420455 282.353409,308.096591 267.017045,332.196591 C258.253409,347.532955 227.580682,347.532955 218.817045,332.196591 C203.480682,308.096591 15.0625,64.9056818 6.29886364,40.8056818 C-6.84659091,23.2784091 1.91704545,1.36931818 23.8261364,1.36931818 L23.8261364,1.36931818 Z" id="Shape" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
 </svg>
