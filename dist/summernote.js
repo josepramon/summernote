@@ -1,12 +1,12 @@
 /**
- * Super simple wysiwyg editor v0.7.0
+ * Super simple wysiwyg editor v0.7.1
  * http://summernote.org/
  *
  * summernote.js
  * Copyright 2013-2015 Alan Hong. and other contributors
  * summernote may be freely distributed under the MIT license./
  *
- * Date: 2015-12-02T15:40Z
+ * Date: 2015-12-17T14:34Z
  */
 (function (factory) {
   /* global define */
@@ -503,6 +503,8 @@
     var isHeading = function (node) {
       return node && /^H[1-7]/.test(node.nodeName.toUpperCase());
     };
+
+    var isPre = makePredByNodeName('PRE');
 
     var isLi = makePredByNodeName('LI');
 
@@ -1408,6 +1410,7 @@
       isBodyInline: isBodyInline,
       isBody: isBody,
       isParaInline: isParaInline,
+      isPre: isPre,
       isList: isList,
       isTable: isTable,
       isCell: isCell,
@@ -3552,8 +3555,8 @@
             dom.remove(anchor);
           });
 
-          // replace empty heading with P tag
-          if (dom.isHeading(nextPara) && dom.isEmpty(nextPara)) {
+          // replace empty heading or pre with P tag
+          if ((dom.isHeading(nextPara) || dom.isPre(nextPara)) && dom.isEmpty(nextPara)) {
             nextPara = dom.replace(nextPara, 'p');
           }
         }
@@ -3689,7 +3692,10 @@
         $editable.outerHeight(options.height);
       }
 
-      $editable.html($note.html());
+      // https://github.com/summernote/summernote/issues/1468#issuecomment-162330296
+      // $editable.html($note.html());
+      $editable.html(dom.html($note) || dom.emptyPara);
+      
       history.recordUndo();
     };
 
@@ -6205,7 +6211,7 @@
 
       var body = [
         '<p class="text-center">',
-        '<a href="//summernote.org/" target="_blank">Summernote 0.7.0</a> · ',
+        '<a href="//summernote.org/" target="_blank">Summernote 0.7.1</a> · ',
         '<a href="//github.com/summernote/summernote" target="_blank">Project</a> · ',
         '<a href="//github.com/summernote/summernote/issues" target="_blank">Issues</a>',
         '</p>'
@@ -6521,7 +6527,7 @@
 
 
   $.summernote = $.extend($.summernote, {
-    version: '0.7.0',
+    version: '0.7.1',
     ui: ui,
 
     plugins: {},

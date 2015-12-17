@@ -80,7 +80,10 @@ define([
         $editable.outerHeight(options.height);
       }
 
-      $editable.html($note.html());
+      // https://github.com/summernote/summernote/issues/1468#issuecomment-162330296
+      // $editable.html($note.html());
+      $editable.html(dom.html($note) || dom.emptyPara);
+      
       history.recordUndo();
     };
 
